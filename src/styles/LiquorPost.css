@@ -1,0 +1,9 @@
+.liquor-post-row {
+  display: flex;
+  justify-content: center;
+}
+
+.liquor-post-left {
+  width: 4rem;
+  margin: 1rem;
+}
