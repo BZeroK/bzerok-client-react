@@ -9,7 +9,6 @@ import "../styles/LiquorPost.css";
 
 function LiquorPost() {
   const [liquor, setLiquor] = useState({
-    userId: 0,
     name: "",
     category: 0,
     volume: 0,
@@ -34,16 +33,6 @@ function LiquorPost() {
       <h1>Liquor Posts</h1>
       <div>
         <h2 onClick={handlePost}>등록</h2>
-
-        <div className="liquor-post-row">
-          <div className="liquor-post-left">User ID</div>
-          <input
-            value={liquor.userId}
-            onChange={(e) =>
-              setLiquor({ ...liquor, userId: parseInt(e.target.value) })
-            }
-          />
-        </div>
 
         <div className="liquor-post-row">
           <div className="liquor-post-left">Name</div>
