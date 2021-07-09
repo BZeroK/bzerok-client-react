@@ -8,7 +8,7 @@ function Login() {
         if (status === 200 && code === 200) {
           window.location.assign(data);
         } else {
-          console.error("Redirect URL 요청 실패");
+          console.error("Redirect URL 요청 실패, Login.jsx");
         }
       })
       .catch((e) => {
