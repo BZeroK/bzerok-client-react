@@ -5,7 +5,7 @@ async function postLiquorPost(liquor) {
   let status, code, data, message;
 
   await axios
-    .post(url + "/api/portfolio", liquor)
+    .post(url + "/api/v1/liquor", liquor)
     .then((res) => {
       status = res.status;
       ({ code, data, message } = res.data);
